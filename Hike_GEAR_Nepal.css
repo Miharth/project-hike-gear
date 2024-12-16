@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* gives space between element */
+    position: relative;
+    /* align-items: center; */
+    background-color: #333;
+    padding: 15px;
+    
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 25px ; 
+
+
+
+    text-decoration: none;
+
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+} 
+
+.navbar .search-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.navbar .search-container:hover {
+    background-color: #575757;
+    border-radius: 5px;
+ 
+}
+
+.navbar .search-container input[type="text"] {
+    padding: 6px; /* in all side top right left and bottom it 6px */
+    margin-right: 15px; /* pushing the search bar to right side */
+    font-size: 17px;
+    border:none;
+    border-radius: 5px;
+    width: 500px;/* it is real width of the srarch item */
+}
+
+
+
+.navbar .login-btn {
+    background-color: #2a38ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin-left: 15px; /* The rule margin-left: 15px; means the element will be moved 15 pixels away from the left side. This creates a small gap or space on the left side of the element. */
+}
+
+.navbar .login-btn:hover {
+    background-color: #0a0eff;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+
+@media(min-width:375px){
+    .navbar{
+        flex-wrap: wrap;
+    }
+}
+
+/* @media (min-width:375px){
+    .item-section{
+        flex-wrap: wrap;
+    }
+} */
+/* NAV BAR ENDS HEAR  */
+
+
+
+  /* chat gpt */
+
+
+  
+
+  /* Slider start hear  */
+
+
+     /* .slider {
+    position: relative;
+    
+    width: 100%;
+    
+    margin: auto;
+    
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 1918px;
+    height: 490px;
+    
+    height: 400px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+} */
+
+
+/* W3 SLIDE BAR CSS  START HEAR */
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  /* padding-top: 2px; */
+  border-radius: 3px;
+}
+
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  /* animation-name: fade; */
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* W3 SLIDE BAR ENDS HEAR  */
+
+
+
+
+
+/* slide bar ends hear  */
+
+
+/* shop section */
+
+.item-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    background-color: rgba(80, 80, 80, 0.414);
+
+
+
+}
+
+@media (min-width:375px){
+    .item-section{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.box{
+    /* height: 300px; */
+    width: 23%;
+    border: 1px solid black;
+    background-color: #ffffff;  
+    transition: 1s;
+    align-items: center;
+    border-radius: 2px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box img {
+
+    height: 150px;
+    padding: 14px;
+    justify-content: center;
+    /* padding-left:120px; */
+   
+}
+
+img:hover{
+  
+    background-color: #383838;
+    
+    
+    
+}
+
+
+
+.box h2{
+    text-align: center;
+
+    
+}
+
+.box button{
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+.box button:hover {
+    background-color:#383838;
+}
+
+.item-section .box1{
+    justify-content: center;
+    
+}
+
+@media (min-width:375px){
+    .box{
+        flex-wrap: wrap;
+    }
+}
+
+/*  item section ends hear  */
+
+footer{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+/* responsive website  */
+
